@@ -1,0 +1,28 @@
+{
+  "name": "microhydra-service",
+  "version": "0.0.1",
+  "author": "Alex Ortega <mortegalex27@outlook.es>",
+  "private": true,
+  "scripts": {
+    "start": "node microhydra-service.js",
+    "debug": "node-debug microhydra-service.js --debug-brk",
+    "test": "mocha specs --reporter spec",
+    "docker": "node scripts/docker.js"
+  },
+  "engines": {
+    "node": ">=6.2.1"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "sharp": "0.21.0",
+    "fwsp-config": "1.1.5",
+    "hydra-express": "1.7.0",
+    "fwsp-server-response": "2.2.6"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.16.0",
+    "mocha": "3.2.0",
+    "superagent": "3.5.2"
+  }
+}
